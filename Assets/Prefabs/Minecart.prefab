@@ -37,6 +37,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4709087222017598}
   - component: {fileID: 61332695962957666}
+  - component: {fileID: 58215398075284938}
+  - component: {fileID: 58732778447815388}
   m_Layer: 0
   m_Name: metal_cart
   m_TagString: Untagged
@@ -84,15 +86,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1186016326749558}
-  m_LocalRotation: {x: -0, y: -0, z: -0.9998932, w: 0.01461837}
-  m_LocalPosition: {x: -0.6, y: 32.3, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 11.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4709087222017598}
   - {fileID: 4368975683116276}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -178.32501}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4368975683116276
 Transform:
   m_ObjectHideFlags: 1
@@ -184,13 +186,41 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.01
+  m_AngularDrag: 0.1
   m_GravityScale: 20
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &58215398075284938
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1101984304154884}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: ce611c1e450674f3a9449458a230385a, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -5.07, y: 2.2}
+  serializedVersion: 2
+  m_Radius: 1.4
+--- !u!58 &58732778447815388
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1101984304154884}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: ce611c1e450674f3a9449458a230385a, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 5.16, y: 2.2}
+  serializedVersion: 2
+  m_Radius: 1.4
 --- !u!61 &61204315961105678
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -202,9 +232,9 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 18962ca2655714d4caf2bd715eb519cf, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -5.0681305, y: 2.576477}
+  m_Offset: {x: -5.0681305, y: 2.227726}
   serializedVersion: 2
-  m_Size: {x: 4.0207844, y: 2.6629486}
+  m_Size: {x: 4.0207844, y: 3.3604507}
 --- !u!61 &61332695962957666
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -216,9 +246,9 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: ce611c1e450674f3a9449458a230385a, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -0.0000038146973, y: 2.5953474}
+  m_Offset: {x: -0.0000038146973, y: 2.9658957}
   serializedVersion: 2
-  m_Size: {x: 14.153091, y: 2.6906834}
+  m_Size: {x: 14.153091, y: 1.9495869}
 --- !u!61 &61608405224926188
 BoxCollider2D:
   m_ObjectHideFlags: 1
