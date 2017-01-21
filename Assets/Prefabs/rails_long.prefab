@@ -35,6 +35,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4624227367790042}
   - component: {fileID: 61507921968476776}
+  - component: {fileID: 70527980098128078}
   m_Layer: 0
   m_Name: tracks_long
   m_TagString: Untagged
@@ -66,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1039556513824324}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 86.2, y: -4.6, z: 0}
+  m_LocalPosition: {x: 1002.0512, y: -241.7626, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4624227367790042}
@@ -152,3 +153,17 @@ BoxCollider2D:
   m_Offset: {x: 0.46865845, y: 1.2886963}
   serializedVersion: 2
   m_Size: {x: 124.99071, y: 2.361641}
+--- !u!70 &70527980098128078
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1805122867138206}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.5800171, y: 1.2526855}
+  m_Size: {x: 127.3568, y: 2.4349933}
+  m_Direction: 1
