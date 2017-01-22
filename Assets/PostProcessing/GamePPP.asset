@@ -25,16 +25,16 @@ MonoBehaviour:
         motionVectorsResolution: 24
         motionVectorsAmplitude: 64
   antialiasing:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
       method: 1
       fxaaSettings:
         preset: 2
       taaSettings:
-        jitterSpread: 0.75
-        sharpen: 0.3
+        jitterSpread: 0.7
+        sharpen: 0
         stationaryBlending: 0.95
-        motionBlending: 0.85
+        motionBlending: 0.45
   ambientOcclusion:
     m_Enabled: 0
     m_Settings:
@@ -67,11 +67,11 @@ MonoBehaviour:
   depthOfField:
     m_Enabled: 0
     m_Settings:
-      focusDistance: 15.6
-      aperture: 0.05
-      focalLength: 23
+      focusDistance: 31.4
+      aperture: 2.8
+      focalLength: 240
       useCameraFov: 0
-      kernelSize: 3
+      kernelSize: 2
   motionBlur:
     m_Enabled: 0
     m_Settings:
@@ -92,12 +92,12 @@ MonoBehaviour:
       logMin: -8
       logMax: 4
   bloom:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       bloom:
         intensity: 0.08
-        threshold: 1.19
-        softKnee: 0.5
+        threshold: 1.9
+        softKnee: 0.57
         radius: 7
         antiFlicker: 0
       lensDirt:
@@ -281,7 +281,7 @@ MonoBehaviour:
       spectralTexture: {fileID: 0}
       intensity: 0.1
   grain:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       colored: 0
       intensity: 0.15
