@@ -46,7 +46,11 @@ public class Breaks : MonoBehaviour
             //GetComponent<ParticleSystem> ().Stop ();
         }
         //canBreak = false;
-           
+        if (Input.GetKeyDown (KeyCode.UpArrow) && canBreak) {
+            Rigidbody rigidbody = GetComponentInParent<Rigidbody> ();
+            rigidbody.AddForce (new Vector3 (300f, 0f, 0f));
+            Debug.Log ("test");
+        }
     }
     private bool canBreak = false;
 
