@@ -15,7 +15,7 @@ public class Breaks : MonoBehaviour
     {
 
         Collider collider = GetComponent<Collider> ();
-        if (Input.GetKey (KeyCode.Space) && canBreak) {
+        if ((Input.GetKey (KeyCode.Space) || (Input.GetKey (KeyCode.DownArrow) )) && canBreak) {
             Debug.Log (collider.material.staticFriction);
             //collider.material.staticFriction = Mathf.Lerp(collider.material.staticFriction, 10, 0.1f * Time.deltaTime);
             collider.material.dynamicFriction = Mathf.Lerp (collider.material.dynamicFriction, 10, 0.1f * Time.deltaTime);
