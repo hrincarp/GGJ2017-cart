@@ -11,13 +11,18 @@ public class Breaks : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        BoxCollider2D boxCollider2D = GetComponent<BoxCollider2D>();
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            Debug.Log ("space");
-            boxCollider2D.enabled = true;
-        } 
-        if (Input.GetKeyUp(KeyCode.Space)) {
-            boxCollider2D.enabled = false;
+        Collider collider = GetComponent<Collider>();
+        if (Input.GetKey(KeyCode.Space)) {
+            Debug.Log (collider.material.staticFriction);
+            collider.material.staticFriction = Mathf.Lerp(collider.material.staticFriction, 100, 0.01f * Time.deltaTime);
+
+            collider.material = collider.material;
+            //collider.enabled = true;
+        } else {
+        //if (Input.GetKeyUp(KeyCode.Space)) {
+            collider.material.staticFriction = Mathf.Lerp(collider.material.staticFriction, 0, 0.1f * Time.deltaTime);
+            //collider.enabled = false;
+            collider.material = collider.material;
         }
 	}
 }
